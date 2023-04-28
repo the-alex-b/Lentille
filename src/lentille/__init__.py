@@ -1,1 +1,1 @@
-from .embedders import Resnet50Embedder
+from .embedders.Resnet50Embedder import Resnet50Embedder
