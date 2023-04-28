@@ -4,9 +4,10 @@ import numpy as np
 import onnxruntime
 
 
+# Models can be found here: https://github.com/onnx/models/tree/main/vision/classification/resnet
 class Resnet50Embedder(BaseEmbedder):
     def __init__(self):
-        # Load the ONNX model
+        # Load the ONNX model from disk
         self.session = onnxruntime.InferenceSession(
             "src/lentille/weights/resnet50/resnet50-v1-12-int8.onnx"
         )
