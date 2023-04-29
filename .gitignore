@@ -136,3 +136,4 @@ data/*
 # Dont store onnx weights
 *.onnx
 *.jpg
+*.png

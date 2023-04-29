@@ -4,6 +4,7 @@ from PIL import Image
 
 def preprocess(image):
     print("Preprocessing")
+    image = image.convert("RGB")  # convert to rbg so normalization step works
 
     # resize so that the shorter side is 256, maintaining aspect ratio
     def image_resize(image, min_len):

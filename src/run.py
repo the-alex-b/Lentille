@@ -6,7 +6,8 @@ from PIL import Image
 
 embedder = Resnet50Embedder()
 # img = Image.open("src/test_data/cat.jpg")
-img = Image.open("src/test_data/dog.jpg")
+# img = Image.open("src/test_data/dog.jpg")
+img = Image.open("src/test_data/segmented_bear.png")
 
 result = embedder.classify(img)
 
