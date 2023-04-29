@@ -1,4 +1,4 @@
-# Lentille - Data embedder
+# Lentille
 Library that wraps various embedders. For now it only wraps a Resnet50 model.
 
 ## Installation
