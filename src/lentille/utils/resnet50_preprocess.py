@@ -2,8 +2,10 @@ import numpy as np
 from PIL import Image
 
 
-def preprocess(image):
-    print("Preprocessing")
+def preprocess(image: Image) -> np.array:
+    """
+    Resnet requires images to be of certain structure. This function performs the various transformations
+    """
     image = image.convert("RGB")  # convert to rbg so normalization step works
 
     # resize so that the shorter side is 256, maintaining aspect ratio

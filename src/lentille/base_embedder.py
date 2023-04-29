@@ -3,6 +3,10 @@ import onnxruntime
 
 
 class BaseEmbedder(ABC):
+    """
+    Base Embedder class. For now this class is instantiated using an onnx session, this might be abstracted higher or lower later on.
+    """
+
     def __init__(self, session):
         self.session = session
 
