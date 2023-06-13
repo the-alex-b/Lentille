@@ -1,4 +1,6 @@
 from lentille import Resnet50Embedder
+import numpy as np
+
 
 embedder = Resnet50Embedder.from_file(
     "downloaded_models/resnet50/resnet50-v1-12-int8.onnx"
